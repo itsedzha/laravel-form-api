@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+
+    <div class="container">
+      <!-- Get User Section -->
+      <div class="form-wrapper">
+        <div class="form-section">
+          <h2>Get User</h2>
+          <input type="text" id="user-token" placeholder="Enter user token" />
+          <button id="get-user-btn">Get</button>
+          <!-- Placeholder for user info -->
+          <div id="user-info"></div>
+        </div>
+      </div>
+
+      <!-- Create Post Section -->
+      <div class="form-wrapper">
+        <div class="form-section">
+          <h2>Create Post</h2>
+          <label for="title">Title</label>
+          <input type="text" id="title" placeholder="Enter title" />
+
+          <label for="body">Body</label>
+          <textarea id="body" rows="4" placeholder="Enter body"></textarea>
+
+          <button id="create-post-btn">Create</button>
+        </div>
+      </div>
+
+      <!-- Show All Posts Section -->
+      <div class="form-wrapper">
+        <div class="form-section">
+          <button id="show-posts-btn">Show All Posts</button>
+          <!-- New button to show posts -->
+          <div id="posts-list"></div>
+          <!-- This will display the list of posts -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="app.js"></script>
+  </body>
+</html>
